@@ -7,6 +7,7 @@ CSS Build Script
 import os
 import re
 import sys
+from datetime import datetime
 from pathlib import Path
 
 # 우선순위가 있는 CSS 파일들 (먼저 로드되어야 함)
@@ -95,7 +96,7 @@ def build_css():
     combined_css = []
     combined_css.append("/* Generated CSS - DO NOT EDIT MANUALLY */")
     combined_css.append("/* Build script combines all CSS files into this single file */")
-    combined_css.append(f"/* Generated at: {os.popen('date').read().strip()} */")
+    combined_css.append(f"/* Generated at: {datetime.now().isoformat(timespec='seconds')} */")
     combined_css.append(f"/* Total files combined: {len(css_files)} */")
     combined_css.append("")
 

@@ -373,7 +373,8 @@ D-123일 남았습니다
   "gallery": {
     "title": "Gallery",
     "subtitle": "사진을 클릭하면 더 크게 볼 수 있습니다",
-    "total_photos": 28
+    "total_photos": 28,
+    "cache_version": 1
   }
 }
 ```
@@ -381,6 +382,7 @@ D-123일 남았습니다
 **`total_photos` 설정:**
 - `static/assets/images/wedding-snaps/` 폴더의 이미지 개수
 - 파일명: `1.webp`, `2.webp`, ..., `28.webp`
+- 같은 파일명으로 사진을 교체해 캐시가 남으면 `cache_version`을 올립니다.
 
 ### 방명록 (guestbook)
 
@@ -559,7 +561,7 @@ D-123일 남았습니다
     "background_music": "/static/assets/audio/wedding-music.mp3",
     "cover_image": "/static/assets/images/cover.webp",
     "gallery_path": "/static/assets/images/wedding-snaps/",
-    "map_image": "/static/assets/images/lacitta.webp",
+    "map_image": "/static/assets/images/wedding_map.jpg",
     "share_background_image": "/static/assets/images/couple-bridge.webp",
     "kakaopay_icon": "/static/assets/images/payment_icon_yellow_small.webp"
   }
@@ -574,7 +576,7 @@ static/
 │   │   └── wedding-music.mp3
 │   └── images/
 │       ├── cover.webp
-│       ├── lacitta.webp
+│       ├── wedding_map.jpg
 │       ├── couple-bridge.webp
 │       ├── payment_icon_yellow_small.webp
 │       └── wedding-snaps/

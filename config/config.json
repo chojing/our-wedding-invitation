@@ -1,38 +1,38 @@
 {
   "wedding": {
     "groom": {
-      "name_kr": "김수환",
-      "name_en": "Soohwan",
-      "display_name": "수환",
-      "birth_order": "장남",
+      "name_kr": "한규호",
+      "name_en": "Kyuho",
+      "display_name": "규호",
+      "birth_order": "아들",
       "parents": {
-        "father": "김은희",
-        "mother": "김미자"
+        "father": "한창희",
+        "mother": "정순선"
       }
     },
     "bride": {
-      "name_kr": "조소영",
-      "name_en": "Soyoung",
-      "display_name": "소영",
-      "birth_order": "장녀",
+      "name_kr": "최지영",
+      "name_en": "Jiyoung",
+      "display_name": "지영",
+      "birth_order": "딸",
       "parents": {
-        "father": "조병의",
-        "mother": "변시내"
+        "father": "최재용",
+        "mother": "박은주"
       }
     },
     "date": {
-      "year": 2026,
-      "month": 5,
-      "day": 17,
-      "time": "14:00",
-      "day_of_week": "일",
-      "display_time": "오후 2시",
-      "iso_format": "2026-05-17T14:00:00"
+      "year": 2027,
+      "month": 2,
+      "day": 20,
+      "time": "13:00",
+      "day_of_week": "토",
+      "display_time": "오후 1시",
+      "iso_format": "2027-02-20T13:00:00"
     },
     "venue": {
-      "name": "양재 라시따시어터 단독홀",
-      "address": "서울특별시 서초구 매헌로 16 1층",
-      "full_address": "서울특별시 서초구 매헌로 16 1"
+      "name": "문래 규수당 카이타스 단독홀",
+      "address": "서울특별시 영등포구 문래로 164 SK리더스뷰 2층",
+      "full_address": "서울특별시 영등포구 문래동3가 55-16번지"
     }
   },
   "accounts": {
@@ -81,17 +81,17 @@
     {
       "id": 1,
       "question": "결혼식은 언제, 어디서 하나요?",
-      "answer": "2026년 5월 17일 (일) 오후 2시에 라시따시어터에서 진행됩니다.<br>주소: 서울특별시 서초구 매헌로 16 1층"
+      "answer": "2027년 2월 20일 (토) 오후 1시에 문래 규수당 카이타스에서 진행됩니다.<br>주소: 서울특별시 영등포구 문래로 164 SK리더스뷰 2층"
     },
     {
       "id": 2,
       "question": "주차가 가능한가요?",
-      "answer": "네, 라시따시어터 건물 내 주차장을 이용하실 수 있습니다.<br>주차장 인포데스크에서 차량번호를 등록해주세요."
+      "answer": "네, SK리더스뷰 건물 내 주차장을 이용하실 수 있습니다."
     },
     {
       "id": 3,
       "question": "대중교통으로 어떻게 가나요?",
-      "answer": "신분당선 양재시민의숲역 5번 출구에서 셔틀버스가 운영됩니다.<br>자세한 교통편은 아래 '교통 수단' 섹션을 참고해주세요."
+      "answer": "2호선 문래역 4번 출구에서 셔틀버스가 운영됩니다.<br>자세한 교통편은 아래 '교통 수단' 섹션을 참고해주세요."
     },
     {
       "id": 4,
@@ -100,15 +100,15 @@
     }
   ],
   "content": {
-    "page_title": "김수환 ♥ 조소영의 결혼식에 초대합니다",
+    "page_title": "한규호 ♥ 최지영의 결혼식에 초대합니다",
     "meta": {
-      "title": "수환 ♥ 소영의 결혼식",
-      "description": "2026년 5월 17일 (일) 오후 2시, 라시따시어터에서 진행됩니다",
+      "title": "규호 ♥ 지영의 결혼식",
+      "description": "2027년 2월 20일 (토) 오후 1시, 문래 규수당 카이타스에서 진행됩니다",
       "image": "https://sooftware.s3.ap-northeast-2.amazonaws.com/etc/cover.webp"
     },
     "intro_animation": {
       "scene1": {
-        "main_text": "Soohwan & Soyoung's Wedding Day",
+        "main_text": "Gyuhho & Jiyong's Wedding Day",
         "bottom_left": "WEDDING",
         "bottom_right": "INVITATION"
       }
@@ -120,7 +120,7 @@
         "min": "MIN",
         "sec": "SEC"
       },
-      "message": "수환 ♥ 소영의 결혼식이 {days}일 남았습니다"
+      "message": "규호 ♥ 지영의 결혼식이 {days}일 남았습니다"
     },
     "buttons": {
       "google_calendar": "Google Calendar에 추가",
@@ -154,8 +154,8 @@
       "mother_label": "어머니"
     },
     "d_day": {
-      "prefix": "수환",
-      "suffix": "소영의 결혼식이",
+      "prefix": "규호",
+      "suffix": "지영의 결혼식이",
       "symbol": "♥︎"
     },
     "rsvp": {
@@ -167,7 +167,8 @@
       "title": "웨딩 갤러리",
       "subtitle_en": "GALLERY",
       "subtitle": "사진을 클릭하면 더 크게 볼 수 있습니다",
-      "total_photos": 27,
+      "total_photos": 18,
+      "cache_version": 2,
       "nav_buttons": {
         "prev_aria": "이전 사진",
         "next_aria": "다음 사진"
@@ -208,7 +209,7 @@
         "text": "포토부스가 설치될 예정입니다.<br>귀한 발걸음 해주신 여러분의<br>환한 미소 남겨주시면 소중히 간직하겠습니다."
       },
       "dining_content": {
-        "text": "예식창과 연회장은 모두 1층에 있습니다.<br>뷔페 형식으로, 120여가지 이상의 다양한 메뉴가 준비되어 있습니다.<br>음료 및 주류는 무제한으로 제공됩니다.<br><br>* 예식 시작 30분 전부터 연회장 입장 가능"
+        "text": "예식창과 연회장은 모두 2층에 있습니다.<br>뷔페 형식으로, 120여가지 이상의 다양한 메뉴가 준비되어 있습니다.<br>음료 및 주류는 무제한으로 제공됩니다.<br><br>* 예식 시작 30분 전부터 연회장 입장 가능"
       },
       "copy_address_text": "클릭하면 주소가 복사됩니다",
       "map_click_hint": "클릭하면 크게 볼 수 있습니다",
@@ -255,18 +256,18 @@
         "native": "공유하기"
       },
       "kakao_share": {
-        "title": "💒 수환 ♥ 소영의 결혼식",
-        "description": "2026년 5월 17일 (일) 오후 2시\n라시따시어터에서 진행됩니다.\n\n소중한 분을 모시고 참석해주시면 감사하겠습니다.",
+        "title": "💒 규호 ♥ 지영의 결혼식",
+        "description": "2027년 2월 20일 (토) 오후 1시\n문래 규수당 카이타스에서 진행됩니다.\n\n소중한 분을 모시고 참석해주시면 감사하겠습니다.",
         "button_title": "청첩장 보기"
       }
     },
     "footer": {
-      "signature": "Copyright 2025. Soohwan & Soyoung All rights reserved.",
+      "signature": "Copyright 2027. Gyuhho & Jiyong All rights reserved.",
       "github_url": "https://github.com/sooftware"
     },
     "chatbot": {
       "subtitle_en": "AI CHATBOT",
-      "name": "수환 & 소영 💕",
+      "name": "규호 & 지영 💕",
       "title": "궁금한 것이 있으신가요?",
       "subtitle": "저희와 결혼식에 대해 궁금한 것이 있으시면 언제든 물어보세요! 💕",
       "placeholder": "예: 두 분은 어떻게 만나셨나요?",
@@ -411,16 +412,16 @@
   },
   "external_links": {
     "maps": {
-      "naver": "https://naver.me/xAFClJVG",
-      "kakao": "https://kko.kakao.com/Eo2w9mM40X",
-      "tmap": "https://tmap.life/1306a1ab"
+      "naver": "https://naver.me/54Lbk0xx",
+      "kakao": "https://kko.to/ivzfYR4oDw",
+      "tmap": "https://tmap.life/6c1ed4b9"
     }
   },
   "assets": {
     "background_music": "/static/assets/audio/wedding-music.mp3",
     "cover_image": "/static/assets/images/cover.webp",
     "gallery_path": "/static/assets/images/wedding-snaps/",
-    "map_image": "/static/assets/images/lacitta.webp",
+    "map_image": "/static/assets/images/wedding_map.jpg",
     "share_background_image": "/static/assets/images/couple-bridge.webp",
     "kakaopay_icon": "/static/assets/images/payment_icon_yellow_small.webp",
     "kakaotalk_icon": "/static/assets/images/kakaotalk.webp"

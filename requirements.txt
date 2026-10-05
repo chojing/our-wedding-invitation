@@ -27,3 +27,4 @@ langsmith>=0.1.0
 
 # ☁️ Cloud Storage
 boto3>=1.28.0
+imageio-ffmpeg>=0.4.9

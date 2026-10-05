@@ -247,32 +247,23 @@ function initializeRSVPRadioButtons() {
     const mealCheckOptions = document.querySelectorAll('#rsvp-modal .meal-check-option');
     console.log(`📍 찾은 meal-check-option 개수: ${mealCheckOptions.length}`);
 
-    mealCheckOptions.forEach((option, index) => {
+    mealCheckOptions.forEach(option => {
         const newOption = option.cloneNode(true);
         option.parentNode.replaceChild(newOption, option);
 
-        newOption.addEventListener('click', function(e) {
-            console.log(`🖱️ 식사 옵션 클릭됨 (${index})`);
-            e.preventDefault();
-            e.stopPropagation();
+        const radio = newOption.querySelector('input[type="radio"]');
+        if (!radio) {
+            console.error('❌ 식사 라디오 버튼을 찾을 수 없습니다');
+            return;
+        }
 
-            const radio = this.querySelector('input[type="radio"]');
-            if (!radio) {
-                console.error('❌ 식사 라디오 버튼을 찾을 수 없습니다');
-                return;
-            }
-
-            // 모든 식사 옵션 선택 해제
+        radio.addEventListener('change', () => {
             document.querySelectorAll('#rsvp-modal .meal-check-option').forEach(opt => {
-                opt.classList.remove('selected');
+                const optionRadio = opt.querySelector('input[type="radio"]');
+                opt.classList.toggle('selected', Boolean(optionRadio && optionRadio.checked));
             });
 
-            // 현재 옵션 선택
-            this.classList.add('selected');
-            radio.checked = true;
-
             setTimeout(() => reinitializeLucideIcons(), 50);
-            console.log(`✅ 식사여부 선택됨: ${radio.value}`);
         });
     });
 
@@ -644,10 +635,11 @@ function initializeGallery() {
     if (!config) return;
 
     const totalPhotos = config.content.gallery.total_photos;
+    const cacheVersion = config.content.gallery.cache_version || 1;
     const imageNumbers = Array.from({length: totalPhotos}, (_, i) => i + 1);
 
     photos = imageNumbers.map(num => ({
-        src: `${config.assets.gallery_path}${num}.webp`,
+        src: `${config.assets.gallery_path}${num}.webp?v=${cacheVersion}`,
         key: num
     }));
 
